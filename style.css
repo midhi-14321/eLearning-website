@@ -4,132 +4,103 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
-html,body{
+
+html,
+body {
     width: 100%;
 }
-.head {
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    line-height: 50px;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    background-color: white;
-}
 
-.logo {
-    margin-left: -120px;
-}
-
-.logo>a {
-    margin-left: 15px;
-    color: #06BBCC;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.logo>i {
-    font-size: 28px;
-    color: #06BBCC;
-    padding-top: 10px;
-
-}
-
-.items {
-    display: flex;
-    gap: 30px;
-    margin-right: -250px;
-}
-
-.items>a {
-    text-decoration: none;
-    color: black;
-}
-.items>li>a{
-    text-decoration: none;
-    color:black;
-}
-.sub-menus>li>a{
-    text-decoration: none;
-}
-
-.join {
-    background-color: #06BBCC;
-    width: 15%;
-    height:80px;
-    padding: 0;
-    margin-top: -10px;
-    margin-right: -182px;
-    text-align: center;
-    line-height: 70px;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-
-}
-
-.join>a {
-    color: white;
+/* .navbar-brand i {
     margin-right: 10px;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-now-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
     text-decoration: none;
 }
 
-.head a.dropdown-arrow:after {
-    content: "\25BE";
-    margin-left: 5px;
-}
+.join-now-btn:hover {
+    background-color: #0056b3;
+} */
 
-.head ul.sub-menus {
-    height: auto;
-    overflow: hidden;
-    width: 170px;
+.navbar {
     background: white;
-    position: absolute;
-    z-index: 99;
-    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
 }
 
-.head ul.sub-menus li {
-    display: block;
-    text-align: left;
-    width: 100%;
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #06BBCC !important;
 }
 
-.head ul.sub-menus a {
-    color: black;
-    font-size: 16px;
-}
-
-.head li:hover ul.sub-menus {
-    display: block
-}
-
-.head ul.sub-menus a:hover {
-    background: #F2F2F2;
-    color: #444444;
-    background-color: #b19e9e;
-}
-
-.items>li {
-    list-style-type: none;
-}
-
-.items>.dropdown-arrow:hover {
-    color: #06BBCC;
-    display: block;
+.navbar-brand i {
+    margin-right: 10px;
 
 }
 
-.items>a:hover {
-    color: #06BBCC;
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 1.2rem 1rem;
+    transition: all 0.3s ease;
 }
 
-.dropdown-arrow:hover {
-    color: #06BBCC;
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+    transform: translateY(-2px);
 }
 
+.navbar-nav .dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .dropdown-item {
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #007bff !important;
+    background-color: transparent;
+}
+
+.join-now-btn {
+    background-color: #06BBCC;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.join-now-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+#join>a {
+    text-decoration: none;
+}
 
 .h-background {
     /* background-image: url("./images/carousel-1.jpg"); */
@@ -137,21 +108,24 @@ html,body{
     height: 100vh;
     margin-top: 80px;
     background-repeat: no-repeat;
-    background-size: cover;   
-   
+    background-size: cover;
+
 }
 
-.bg-card>.best{
+.bg-card>.best {
     font: 900;
     font-size: 1.2rem;
-    color:#06BBCC;
+    color: #06BBCC;
 }
-.bg-card>h1{
+
+.bg-card>h1 {
     font-weight: 800;
     font-size: 3rem;
 }
-.bg-card>h1,.bg-card>.desc{
-    color:white;
+
+.bg-card>h1,
+.bg-card>.desc {
+    color: white;
 }
 
 .h-1 {
@@ -252,6 +226,7 @@ button>.read {
     color: white;
     text-decoration: none;
 }
+
 button {
     background-color: #06BBCC;
     padding: 15px 40px;
@@ -287,7 +262,11 @@ button {
     position: relative;
     overflow: hidden;
 }
-.box1>img:hover,.box2>img:hover,.box3>img:hover,.box4>img:hover{
+
+.box1>img:hover,
+.box2>img:hover,
+.box3>img:hover,
+.box4>img:hover {
     transform: scale(1.1);
 }
 
@@ -361,10 +340,11 @@ button {
     height: fit-content;
     object-fit: cover;
     margin-bottom: 30px;
-    
+
 
 }
-.cards>.c:hover{
+
+.cards>.c:hover {
     transform: translateY(-10px);
     transition: transform 0.3s ease;
 }
@@ -378,7 +358,10 @@ button {
     overflow: hidden;
 
 }
-.c1>img:hover,.c2>img:hover,.c3>img:hover{
+
+.c1>img:hover,
+.c2>img:hover,
+.c3>img:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -480,13 +463,14 @@ button {
     object-fit: cover;
     height: fit-content;
 }
+
 .t1>img:hover,
 .t2>img:hover,
 .t3>img:hover,
-.t4>img:hover{
+.t4>img:hover {
     transform: scale(1.1);
-    transition:transform 0.3s ease;
-} 
+    transition: transform 0.3s ease;
+}
 
 
 .faculty>.t1>.social-icons,
@@ -502,7 +486,7 @@ button {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:60%;
+    top: 60%;
     left: 20%;
     cursor: pointer;
     background-color: white;
@@ -529,119 +513,134 @@ button {
     background-color: #d6eaec;
     overflow: hidden;
 }
-.f-names{
-    margin-top:60px;
-    text-align: center; 
+
+.f-names {
+    margin-top: 60px;
+    text-align: center;
 }
-.testimonial{
+
+.testimonial {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
-    padding:50px 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 50px 80px;
 }
-.image_test>img{
-    height:80px;
-    width:80px;
+
+.image_test>img {
+    height: 80px;
+    width: 80px;
     border-radius: 50px;
     padding: 10px;
-    border:1px solid grey;
+    border: 1px solid grey;
     background-color: white;
     text-align: center;
 }
-.client{
+
+.client {
     padding: 20px 0px;
     text-align: center;
-    
+
 }
-.test{
+
+.test {
     text-align: center;
 }
-.client>.info{
+
+.client>.info {
     /* text-align: justify; */
     padding: 20px 25px;
 }
-.image_test>h5{
+
+.image_test>h5 {
     margin-top: 15px;
 }
-.client>.info:hover{
+
+.client>.info:hover {
     background-color: #06BBCC;
     cursor: pointer;
 }
-.footer{
+
+.footer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    border:1px solid black;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid black;
     padding: 80px;
     background-color: #181d38;
-    color:white;
+    color: white;
 }
 
-.foot>.link{
+.foot>.link {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     margin-top: 20px;
-    
+
 }
 
-.link>a{
+.link>a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
-.foot>.news>input{
-    border:none;
-    height:50px;
+
+.foot>.news>input {
+    border: none;
+    height: 50px;
 }
-.gallery{
+
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     margin-top: 20px;
 }
 
-.gallery>.ft-img>img{
+.gallery>.ft-img>img {
     width: 100%;
     height: fit-content;
     object-fit: cover;
 }
-.last{
+
+.last {
     margin-left: 40px;
 }
-.soc-icons{
+
+.soc-icons {
     display: flex;
     padding: 20px 0px;
-    gap:5px;
+    gap: 5px;
     cursor: pointer;
 }
-.soc-icons>i{
+
+.soc-icons>i {
     border-radius: 50px;
     height: 40px;
     width: 40px;
-    border:1px solid white;
-    background-color:rgba(24, 29, 56, .7);
-    display:flex;
+    border: 1px solid white;
+    background-color: rgba(24, 29, 56, .7);
+    display: flex;
     justify-content: center;
     align-items: center;
-     
+
 }
-.soc-icons>i:hover{
+
+.soc-icons>i:hover {
     background-color: white;
-    color:#06BBCC;
+    color: #06BBCC;
 }
 
 
-.rcb{
+.rcb {
     background: rgba(75, 73, 73, 0.495);
     opacity: 0.1;
 }
 
-#imgback{
+#imgback {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 100vh;
     background-color: rgba(24, 29, 56, .7);
 }
@@ -649,9 +648,10 @@ button {
 .carousel-item {
     width: 100%;
     height: 100%;
-    
+
 }
-.bg-card{
+
+.bg-card {
     width: 100%;
     height: 100%;
     color: white;
